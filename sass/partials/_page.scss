@@ -1,0 +1,162 @@
+@import "compass/css3";
+
+//-----------------------------------------------
+// The following html5-boilerplate styles should
+// probably be customized for each site
+//-----------------------------------------------
+
+body, select, input, textarea {
+  color: $font-color;
+  // Set your base font here, to apply evenly
+  // font-family: Georgia, serif;
+}
+
+//Headers (h1, h2, etc) have no default font-size or margin; define those yourself
+h1, h2, h3, h4, h5, h6 {
+  // Bold might not be the best choice if you are
+  // embedding a @font-face that's already bold
+  font-weight: normal;
+  line-height: 1em;
+}
+
+h1 { 
+ font-size: 3em; 
+ margin-bottom: 0.5em; 
+}
+
+h2 { 
+ font-size: 2em;
+ margin-bottom: 0.75em; 
+}
+
+h3 {
+ margin-bottom: 1em;
+ font-size: 1.5em;
+}
+
+h4 {
+ margin-bottom: 1.25em;
+ font-size: 1.2em;
+}
+
+h5, h6 { 
+ font-weight: bold; 
+ font-size: 1em; 
+ margin-bottom: 1.5em;
+}
+
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img { 
+ margin: 0; 
+}
+
+/* Text elements -------------------------------------------------------------- */
+
+p { 
+margin : 0 0 1.5em; }
+
+a, a:visited {
+color : $link-color; 
+text-decoration : underline; }
+
+a:focus, a:hover { 
+color : $link-hover-color; }
+
+a img {
+border : none; }
+
+blockquote, q {
+quotes : "" ""; }
+
+blockquote { 
+margin : 1.5em 1.5em 1.5em -1.5em;
+padding-left : 1.5em;
+border-left : 1px solid #666;
+font-style : italic;
+color: #7F8599;
+}
+
+blockquote:before, blockquote:after, q:before, q:after { 
+content : ""; }
+
+strong, th { 
+font-weight : bold; }
+
+em, dfn { 
+font-style : italic; 
+}
+
+dfn { 
+font-weight : bold; }
+
+sup, sub { 
+line-height : 0; }
+
+abbr, acronym { 
+border-bottom : 1px dotted #666; }
+
+address {
+margin : 0 0 1.5em;
+font-style : italic;
+font-family: "Serif6Beta";
+}
+
+del { 
+color : #666; }
+
+pre, tt {
+margin : 1.5em 1.5em 1.5em -1.5em;
+padding-left : 1.5em;
+border-left : 1px dotted #666;
+line-height : 1.5; }
+
+pre { 
+white-space : pre;
+font : 1em 'andale mono', 'lucida console', monospace; }
+
+code { 
+display : inline;
+font : 1em 'andale mono', 'lucida console', monospace; }
+
+/* Lists -------------------------------------------------------------- */
+
+li p { margin: 0; padding-bottom: .3em; }
+
+/* -------------------------------------------------------------------- */
+
+small {
+  // Use font-size mixin to convert to percentage for YUI
+  // http://developer.yahoo.com/yui/3/cssfonts/#fontsize
+  @include font-size(11px);  // approx 85% when base-font-size eq 13px
+}
+
+// Add the 'required' attribute on your
+// inputs if you want to use these
+input:valid, textarea:valid {}
+input:invalid, textarea:invalid {
+  @include border-radius(1px);
+  @include single-box-shadow(red, 0, 0, 5px, 0);
+}
+.no-boxshadow input:invalid,
+.no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+
+//-----------------------------------
+// Add your own custom styles below
+//-----------------------------------
+
+body {}
+
+#container {
+    width: 560px;
+    margin: 1em auto;
+    border-radius: 10px;
+    background: #FBFBFB;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    padding: 1em;
+}
+
+header {}
+
+#main {}
+
+footer {}
